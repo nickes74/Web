@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 juil. 2018, 16:16:02
+    Author     : afpa1799
+*/
+body{font-family: Verdana, Arial, sans-Serif;margin: 0; padding: 0; background-color: #f3eaea}
+
+h1{font-weight: bold;text-align:center;color: green}
+h1,h2,h3{font-family: Arial, sans-serif}
+
+.produit{background-color: bisque}
+.reference{background-color: graytext}
+.general{background-color: aqua}
+
+#troisdiv{font-size: small;color: blue}
+
+#premierdiv h3{color: red}
+
+blockquote p:first-letter {color:green;font-weight: bold}
+blockquote p:first-letter {font-family: fantasy;font-size: 2em}
+blockquote p{text-indent: 1em}
+
+th{text-decoration: underline; font-variant: small-caps}
+tr td:nth-child(1):first-letter {text-transform: uppercase}
+tr td:nth-child(2) {background-color: red; width: 10em; text-align: center}
+tr td:nth-child(3) {width: 30%; text-align: right}
+tr td:nth-child(4) {text-align: center}
+tr td:nth-child(3):after{content: " €"}
+
+#troisdiv{font-size: small; background-color:#C0C0C0}
+#troisdiv p:first-child{float:  right}
+
+#premierdiv{background-image: url(image/logoafpa.jpg); background-position: right; background-repeat: repeat-y}
+
+table{border:1px solid black; border-collapse: collapse}
+th{border:1px solid black;}
+td{border:1px solid black;}
+
+#pborder{border: 5px solid green}
+
+ol ol li{list-style-type:lower-alpha}
+ol ul li{list-style: circle}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Les formulaires</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1> Exemples de formulaires</h1>
+            <form action="#" method="get">
+                <input type="text" name="saisie" size="40" maxlength="70" value="http://"/>
+                
+                <h3>Case à cocher</h3>
+                
+                <input id="cas1" type="checkbox" name="case" value="case1"/>
+                <label for="cas1">case 1.</label><br>
+                <input id="cas2" type="checkbox" name="case" value="case2" checked="checked"/>
+                <label for="cas2">case 2.</label><br>
+                <input id="cas3" type="checkbox" name="case" value="case3"/>
+                <label for="cas3">case 3.</label><br>
+                
+                <h3>Boutons radio</h3>
+                
+                <input id="rad1" type="radio" name="radio" value="salé"/>
+                <label for="rad1">salé</label>
+                <input id="rad2" type="radio" name="radio" value="sucré"/>
+                <label for="rad2">sucré</label>
+                <input id="rad3" type="radio" name="radio" value="sansSaveur" checked/>
+                <label for="rad3">sans saveur</label>                           
+            </form>
+            
+            <form action="#" method="post" enctype="multipart/form-data">
+                <h3>Envoyer un fichier</h3>
+                <input type="file" name="fichierImage"/>
+            </form>
+            
+            <form action="#" method="get">
+                <h3>Champ de saisie mot de passe</h3>
+                
+                <input type="password" name="psw" value="psw"/>
+                <br>
+                
+                <h3>Soumettre un fichier</h3>
+                
+                <button type="submit" value="Envoyer" title="boutonEnvoyyyyyye">Envoyer</button>
+                
+                <h3>... ou le remettre à Zéro !</h3>
+                
+                <input type="text" name="saisie" size="20" maxlength="50" value="Petit texte..."/>
+                <button type="reset" value="MettreAZero" title="mise0">Mettre à zéro</button>
+                
+                <h3>Champ de saisie long</h3>
+                
+                <textarea name="commentaire" cols="25" rows="5">C'est l'histoire d'un fou qui repeint son plafond.
+                Un autre fou arrive et lui  dit : "accroche-toi au pinceau, j'enlève l'échelle!"</textarea>
+                
+                <h3>Balise</h3>
+                
+                <h4>Format par défaut</h4>
+                
+                <select name="fromage">
+                    <option value="beaufort">beaufort</option>
+                    <option value="saintNectaire">saint nectaire</option>
+                    <option value="camembert">camembert</option>
+                    <option value="reblochon" selected>reblochon</option>
+                </select>
+                
+                <h4>On affine un peu...</h4>
+                
+                <select name="fromage" size="4" multiple>
+                    <option value="beaufort">beaufort</option>
+                    <option value="saintNectaire">saint nectaire</option>
+                    <option value="camembert">camembert</option>
+                    <option value="reblochon">reblochon</option>
+                </select>
+               
+            </form>
+            <form action="#">
+                 
+                <h3>Un exemple combinant plusieurs types de champs</h3>
+                
+                <fieldset>
+                    <legend> Vous identifier </legend>
+                    <p>Votre adresse de courrier électronique...</p>
+                    <input type="email" name="saisie" size="40" maxlength="70" value="nom@fournisseur.domaine"/><br>
+                    <p> Tapez un commentaire ici</p>
+                    <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Votre commentaire..."/></textarea>
+                </fieldset>    
+            </form>
+            <br>
+            <form action="#">
+                <input type="submit" value="Envoyer"/>
+                <input type="reset" value="Annuler"/>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 juil. 2018, 15:26:13
+    Author     : afpa1799
+*/
+
+div{width: 400px; margin: 0 0}
+h1,h3{text-align: center}
+label{position: absolute;margin-top: 5px}
+input{margin-left: 100px;margin-top: 5px}

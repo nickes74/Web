@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11 juil. 2018, 17:34:19
+    Author     : afpa1799
+*/
+
+body{padding: 0;margin: 0;width: 100%;}
+
+h1, h3{text-align: center; font-weight: bold}
+#conteneur{background-image: linear-gradient(pink, purple);
+ margin: 0 auto;padding: 10px; border-radius: 10px; width:65%}
+
+
+#photo{width: 100px; float: left;}
+#txtphoto{width : 200px; float: left}
+#adresse{ position: absolute}
+#placement{margin-left: 130px;border-radius: 10px; }
+#boite{padding: 2px 10px;background-image: linear-gradient(brown, yellowgreen);
+       font-family: New Century Schoolbook, Georgia, sans-serif; font-weight: bold;
+       color: white; font-size: .8em;
+       text-transform: uppercase; text-shadow: 2px 2px 2px black;
+       border-radius: 20px;}
+
+#boite:hover{background-image: linear-gradient(yellowgreen, brown)}
+
+.abso{position: absolute}
+.pos2{margin-left: 30px}
+.pos3{margin-left: 20px;}
+.revue{height: 80px; width: 60%; text-align: left; float:left}
+.comm{height: 80px; width: 40%; float:left; margin-top: 20px; margin-left: -50px}
+
+legend{font-style: italic; font-weight: bold}

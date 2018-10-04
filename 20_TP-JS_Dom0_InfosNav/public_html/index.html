@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Enoncés</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h2>Informations de votre navigateur</h2>
+            <script type='text/javascript'>
+                var nav = navigator.appCodeName;
+                document.write('votre navigateur est de code : ' + nav + '<br><br>');
+                var nom = navigator.appName;
+                document.write('votre navigateur porte le nom : ' + nom + '<br><br>');
+                var version = navigator.appVersion;
+                document.write('son numéro de version est : ' + version + '<br><br>');
+                var cook = navigator.cookieEnabled;
+                document.write('les cookies sont autorisés : ' + cook + '<br><br>');
+                var platForm = navigator.platform;
+                document.write('sa plateforme ' + platForm + '<br><br>');
+                document.write('votre entete : ' + navigator.userAgent + '<br><br>');
+                document.write('son langage actuel : ' + navigator.language + '<br><br>');
+            </script>
+            <h2>Informations de votre configuration écran</h2>
+            <script type="text/javascript">
+                document.write('largeur : ' + screen.width + '<br><br>');
+                document.write('hauteur : ' + screen.height + '<br><br>');
+                document.write('largeur utilisable : ' + screen.availWidth + '<br><br>');
+                document.write('hauteur utilisable : ' + screen.availHeight + '<br><br>');
+                document.write('profondeur de couleur : ' + screen.colorDepth + '<br><br>');
+                document.write('résolution de couleur : ' + screen.pixelDepth + '<br><br>');
+            </script>
+            <h2>Informations de la fenpetre de votre navigateur</h2>
+            <script type="text/javascript">
+                document.write('largeur (sans barre doutils et barre de défilmenent) : ' + window.innerWidth + '<br><br>');
+                document.write('hauteur (sans barre doutils et barre de défilmenent) : ' + window.innerHeight + '<br><br>');
+                document.write('largeur (avec barre doutils et barre de défilmenent) : ' + window.outerWidth + '<br><br>');
+                document.write('hauteur (avec barre doutils et barre de défilmenent) : ' + window.outerHeight + '<br><br>');
+            </script>
+        </div>
+    </body>
+</html>

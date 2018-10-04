@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Nombre Mystere</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="nombre.css" rel="stylesheet" type="text/css"/>
+        <script src="nombre.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div>
+            <h1>Découvrez le nombre mystère</h1>
+            <h3>Vous avez 7 essais pour trouver le nombre choisi</h3>
+            <h3>par l'ordinateur,</h3>
+            <h3>au hasard entre 1 et 100</h3>
+                <button name="Nouveau Jeu" onclick="init()">Nouveau Jeu</button>
+                <button id="solution" onclick="solution()">Solution</button>
+                <button id="proposer" onclick="proposer()">Proposer</button><br>
+                <label>Proposition :</label><input type="text" id="saisie" placeholder="0" size="5" maxlength="5"/><br>
+                <label>N°essai :</label><input type="text" id="essai" disabled placeholder="7" size="5" maxlength="5"/><br>
+                <label>Message :</label><input type="text" id="message" disabled size="20" maxlength="30"/><br>
+                <label>Réponse</label><input type="text" id="reponse" disabled size="40" maxlength="40"/><br>
+        </div>
+    </body>
+</html>

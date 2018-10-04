@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 juil. 2018, 14:58:50
+    Author     : afpa1799
+*/
+
+
+#idDivContenu {
+    width: 1024px;
+    margin: 0 auto;
+}
+#idDivContenu h1 {
+    text-align: center;
+}		
+#idDivConsigne {
+    width:inherit;
+    height:240px;
+}
+#idDivImage {
+    float:left;
+    width: 550px;
+    height: 430px;
+}
+/* la div pour affichage de la preuve est cachée par défaut*/
+#idDivPreuve {
+    width:300px;
+    float:right;
+    display:none;
+}
+img{
+    width: 540px;
+    height: 420px;
+}

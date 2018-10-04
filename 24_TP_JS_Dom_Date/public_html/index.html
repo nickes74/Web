@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Gestion de la date</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="datecss.css" rel="stylesheet" type="text/css"/>
+        <script src="date.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>Calcul de dates</h1>
+        <div>
+            <fieldset id="infos">
+                <legend>Entrez votre date de naissance</legend>
+                <br><br>
+                <form action="#" method="get">
+                <label>année</label><input type="text" id="annee" size="5" maxlength="5" value="1900"/>
+                <label>mois</label><input type="text" id="mois" size="10" maxlength="10" value="2"/>
+                <label>jour</label><input type="text" id="jour" size="10" maxlength="10" value="15"/>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>Sélectionnez l'unité</legend>
+                <form action="#" method="get">
+                <input type="radio" name="test" value="jourR" id="joursR" checked/><label>jours</label><br>
+                <input type="radio" name="test" value="moisR" id="moisR"/><label>mois</label><br>
+                <input type="radio" name="test" value="anneeR" id="anneeR"/><label>année</label><br>
+                </form>
+            </fieldset>
+            <input type="button" value="Calculer" onclick="calculer()"/>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulaire</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="form.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Renseignements vous concernant</h1>
+        <h3>(les champs précédés d'une * sont obligatoires)</h3>
+        <div id="conteneur">  
+            <form action="#" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Votre identité</legend><br>
+                
+                    <p><label class="abso">Votre nom : * </label>
+                    <input id="placement" type="text" name="nom" pattern="^([A-Z][a-z]+[-']?){1,2}$" required placeholder="Nom" size="30" maxlength="50"/>
+                    
+                    <label class="pos2">Votre photo d'identité * </label>
+                    <input id="boite" type="file" accept="image/jpg" name="photo"/>
+
+                    <br>
+                    
+                    <p><label class="abso">Votre prénom : *</label>      
+                        <input id="placement" type="text" name="prenom" pattern="^([A-Z][a-z]+[-]?){1,2}$" required placeholder="Prénom" size="30" maxlength="50"/><br>
+                  
+                    <p><label id="adresse">Votre adresse : </label>
+                    <textarea id="placement" name="adresse" cols="50" rows="3"></textarea><br>
+                    
+                    <p><label class="abso">Votre code postal : </label><input id="placement" type="text" name="codePostal" pattern="^\d{5}$" placeholder="5 chiffres" size="30" maxlength="50"/>
+                    <label class="pos2">Votre ville : &nbsp;&nbsp;&nbsp;</label><input class="pos3" type="text" name="ville" size="60" maxlength="80"/>
+                    
+                    <p><label class="abso">Votre téléphone : * </label><input id="placement" pattern="^0[0-9]([ .-]?)\d{2}(\1\d{2}){3}$" required placeholder="01 23 45 67 89" type="text" name="phone" size="30" maxlength="50"/>
+                        <label class="pos2">Votre mail : * </label><input class="pos3" pattern="^[a-z]+([a-z]|[0-9]|[.-_]{1})*@[a-z]{2,}([a-z]|[0-9]|[.-_]{1})*\.[a-z]{2,4}$" required placeholder="abcde@abcde.abc" type="email" name="nom" size="60" maxlength="80"/>
+            </fieldset>
+            <fieldset>
+                <legend>Vos connaissances générales</legend>
+                    <div class="revue">
+                    <p> Lisez vous une ou plusieurs revues informatiques ? &nbsp;
+                        <label for="rev">oui</label><input id="rev" type="radio" name="revue" value="oui"/>
+                        <label for="revn">non</label><input id="revn" type="radio" name="revue" value="non" checked="checked"/>
+                        <label>Si oui lesquelles ? </label></div>
+                    <div class="comm"><textarea name="adresse" cols="30" rows="3"></textarea></div>
+                    <div class="revue">
+                    <p> Consultez vous un ou plusieurs  sites informatiques ? 
+                        <label for="sit">oui</label><input id="sit" type="radio" name="site" value="oui"/>
+                        <label for="sitn">non</label><input id="sitn" type="radio" name="site" value="non" checked="checked"/>
+                        <label>Si oui lesquelles ? </label></div>
+                    <div class="comm"><textarea name="adresse" cols="30" rows="3"></textarea></div>
+            </fieldset>
+            <fieldset>
+                    <legend>Vos intérets</legend>
+                    <br>
+                    <p> Vous vous interessez :
+                    <p><input id="web" type="checkbox" name="web" value="web"/><label for="web">à la programmation web</label>
+                    <p><input id="web1" type="checkbox" name="web1" value="prog"/><label for="web1">à la programmation informatique</label>
+                    <p><input id="web2" type="checkbox" name="web2" value="jeux"/><label for="web2">aux jeux vidéo</label><br>
+            </fieldset>
+            <br>
+            <button type="submit" title="Soumettre" value="soumettre">Soumettre</button>
+            <button type="reset" title="Reinit" value="reset">Réinitialiser</button>
+            </form>
+        </div>
+    </body>
+</html>

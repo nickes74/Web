@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Fenetres</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            var fen = null;
+            var options = "width=200, height=200, toolbar=yes,"+
+                    "directories=no, menubar=no,scrollbars=yes, status=yes";
+                function ouvrirFenetre(){
+                    fen = open("","fenetre",options);
+                    fen.document.title='fenetre fille';
+                    fen.document.write('<h3>Fenêtre Fille</h3>');
+                }
+                function grandirFen(){
+                    fen.resizeBy(50, 50);
+                }
+                function reduireFen(){
+                    fen.resizeBy(-50, -50);
+                }
+                    
+        </script>    
+    </head>
+    <body>
+        <div>
+            <form>
+                <h2>TP sur la gestion des fenêtres</h2>
+                <input type="button" value="nouvelle fenêtre"
+                       onclick="ouvrirFenetre()"/>
+                <input type="button" value="Fermer" onclick="fen.close()"/>
+                <input type="button" value="Taille+" onclick="grandirFen()"/>
+                <input type="button" value="Taille-" onclick="reduireFen()"/>
+                <input type="button" value="Montrer" onclick="fen.focus()"/>
+            </form>
+        </div>
+    </body>
+</html>

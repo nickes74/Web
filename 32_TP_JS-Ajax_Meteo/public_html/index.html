@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Previsions meteo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        
+        <link href="datatables.css" rel="stylesheet" type="text/css"/>
+        <link href="dataTables.jqueryui.css" rel="stylesheet" type="text/css"/>
+        <link href="meteo.css" rel="stylesheet" type="text/css"/>
+        
+        <script src="jquery-3.3.1.js" type="text/javascript"></script>
+        <script src="datatables.js" type="text/javascript"></script>
+        <script src="dataTables.jqueryui.js" type="text/javascript"></script>
+        <script src="meteo.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="conteneur">
+            <h1>Météo de la ville de Créteil</h1>
+            <button name="soumettre" onclick="requete()">Envoyer la requête</button>
+            <br><br>
+            <table id="tableau">
+                <thead>
+                    <tr>
+                        <th>HEURE</th>
+                        <th>TEMPERATURE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+                <tfoot>
+                    
+                </tfoot>
+            </table>
+        </div>
+    </body>
+</html>
